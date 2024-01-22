@@ -1,0 +1,72 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+#NavBar{
+    background-color: brown;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 10% 35% 10% 50%;
+    border-radius: 25px;
+}
+.NavBar_item{
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align:center;
+    
+}
+a.buttonLink:link, a.buttonLink:visited {
+    background-color: #41120f;
+    color: white;
+    padding: 20px 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+  }
+  
+  a.buttonLink:hover, a.buttonLink:active{
+    color: brown;
+    background-color: white;
+  }
+.HomeButton{
+    margin: auto;
+    border-radius: 10px;
+}
+
+#container{
+    margin: auto;
+    width: 50%;
+}
+.Recipe-Name{
+    border-color: brown;
+    padding: 10px;
+    background-color: brown;
+    text-align: center;
+    color: white;
+}
+
+
+.recipe-card{
+    border-style: double;
+    border-color: brown;
+    padding: 20px;
+}
+.recipe-info{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: bisque;
+    padding: 20px;
+    gap:20px;
+}
+.recipe-info_item_label{
+    font-size: 20px;
+}
+.recipe-image{
+    display: block;
+    margin:auto;
+    padding: 10px;
+    
+    width: 50%;
+}
