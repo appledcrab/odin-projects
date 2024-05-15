@@ -25,13 +25,28 @@
             align-items: center;
             font-family: Arial, sans-serif;
         }
+        .button-option{
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #626262;
+            color: #ffffff;
+            display: none;
+        }
     </style>
 </head>
 <body>
     <div class="centered-box">
         <h1>Rock Paper Scissors</h1>
-        <button id="play-button"> Play </button>
-        <div id="button-container"></div>
+        <button id="play-button" style="cursor: pointer;"> Play </button>
+        <div id="button-container">
+            <button class="button-option" id="rock">Rock</button>
+            <button class="button-option" id="paper">Paper</button>
+            <button class="button-option" id="scissors">Scissors</button>
+        </div>
         <div id="result-container"></div>
     </div>
     
