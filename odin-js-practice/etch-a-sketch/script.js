@@ -47,9 +47,12 @@ function clearGrid(){
 }
 
 function changeSize(){
-    const size = prompt("Change the size? (default 16)");
+    let size = prompt("Change the size? (default 16)");
     if (size == null){
-        size = 16
+        size = 16;
+    }
+    if (size > 100){
+        size = 100;
     }
 
     // remove previous grid
