@@ -23,11 +23,18 @@ function createGrid(gridSize) {
             const item = document.createElement('div');
             item.classList.add('grid-item');
             item.classList.add('p-1','border','border-red','p-2');
+            item.style.opacity = .10;
             div.appendChild(item);
             
             // event listener for hover effect
             item.addEventListener('mouseover', (e) => {
+
                 item.style.backgroundColor = 'black';
+                let currentOpac = parseFloat(item.style.opacity)
+
+                let newOpac = currentOpac + .10;
+                newOpac = newOpac > 1 ? 1 : newOpac;
+                item.style.opacity = newOpac;
             });
             item.addEventListener('dblclick', () =>{
                 item.style.backgroundColor = 'white';
