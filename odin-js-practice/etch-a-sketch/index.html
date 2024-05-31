@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Project: Etch-A-Sketch</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src ="js/bootstrap.bundle.min.js"?></script>
+    <style>
+        :root{
+            --bs-primary: #D8CBB0;
+        }
+        .grid-item{
+
+        }
+        .grid-item:hover{
+            background-color: var(--bs-primary);
+        }
+    </style>
+</head>
+<body id="body" class="bg-dark white-text">
+    <header class="bg-secondary text-center p-3">
+        <h1 >Etch-A-Sketch</h1>
+        <button class="btn btn-primary" onclick="changeSize()">Change Size</button>
+        <button class="btn btn-primary" onclick="clearGrid()">Clear Grid</button>
+
+    </header>
+    
+</body>
+<script src="script.js"></script>
+
+</html>
